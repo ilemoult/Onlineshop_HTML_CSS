@@ -1,0 +1,1462 @@
+/*  Ein Kommentar in CSS */
+
+/*  Der * definiert den "global reset" Hier werden alle Elemente angesprochen, die später nicht anders definiert werden. */
+*
+{
+	font-family:  arial, sans-serif;
+	font-size:100%;
+}
+
+/*  INDEX.HTML ANFANG */
+html,body
+{
+	height:100%;
+}
+
+body 
+{
+	background: rgba(242, 233, 216, 1);
+	color:black;
+	margin:0px;
+}
+
+a
+{
+	color:black;
+	text-decoration:none;
+}
+
+#wrapper
+{
+	width: 100%;
+	height: 1800px;
+	background: rgba(242, 233, 216, 1);
+	margin: auto;
+}
+
+	/*  KOPFZEILE (FIXED) ANFANG */
+#header
+{
+	background: rgba(174, 137, 111, 12);
+	width: 100%;
+	position: fixed;
+	z-index: 2000;
+	height: 40px;
+}
+
+#statement
+{
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	_background: chocolate;
+	height: 40px;
+	display: table;
+}
+
+.motivation
+{
+	width: 70%;
+	text-align: center;
+	_background: green;
+	margin: auto;
+	font-weight: lighter;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: bold;
+	color: rgba(242, 233, 216, 1);
+	font-size: 100%;
+	height: 40px;
+	display: table-cell;
+	vertical-align: middle;
+}
+	/*  KOPFZEILE (FIXED) ENDE */
+
+	/*  SOCIAL MEDIA ICONS ANFANG */
+#social
+{
+	width: 1200px;
+	margin: auto;
+	_background: darkmagenta;
+	height: 30px;
+	position: relative;
+	top: 110px;
+}
+
+.socialmedia
+{
+	font-size: 150%;
+	float: left;
+	width: 30px;
+	height: 30px;
+	_background: brown;
+}
+
+.socialmedia:hover
+{
+	transform: scale(1.5);
+	transition: .2s;
+}
+	/*  SOCIAL MEDIA ICONS ENDE */
+
+#content
+{
+	width: 1200px;
+	height: 1700px;
+	margin: 120px auto;
+	background: white;
+	box-shadow: 0px 10px 15px black;
+}
+
+	/*  HEADER BILD ANFANG */
+#eins
+{
+	height: 334px;
+}
+
+#headerpic
+{
+	width: 1200px;
+	height: 334px;
+	position: relative;
+	left: -40px;
+}
+
+#headerpic_mobil
+{
+	display: none;
+}
+
+		/*  NAVI ANFANG */
+#navi
+{
+	width: 80%;
+	height: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	_background: red;
+	position: relative;
+	top:-325px;
+}
+
+#navi_mobile
+{
+	display: none;
+}
+
+.navipunkt
+{
+	width: 120px;
+	_background: blue;
+	text-align: center;
+}
+
+.navipunkt a
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 20px;
+}
+
+.innen
+{
+	display: none;
+	position: relative;
+	_background: hotpink;
+	position: relative;
+}
+
+.navipunkt:hover .innen
+{
+	display: block;
+}
+		/*  NAVI ENDE */
+
+		/*  HEADLINE GRÖßENWAHN ANFANG */
+#headline
+{
+	height: 100px;
+	width: 450px;
+	position: relative;
+	left:320px;
+	top:-290px;
+	_background: green;
+}
+
+#headline h1 a
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 550%;
+}
+		/*  HEADLINE GRÖßENWAHN ENDE */
+
+	/*  HEADER BILD ENDE */
+
+	/*  ERFAHRUNGSWERTE ANFANG */
+#zwei
+{
+	height: 100px;
+	background: rgba(174, 137, 111, 12);
+}
+
+.numbers
+{
+	width: 100%;
+	height: 50px;
+	_background: yellow;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.numeral
+{
+	height: auto;
+	font-family: 'Dancing Script', cursive;
+	font-size: 200%;
+	margin-top: 10px;
+	font-weight: bold;
+	color:rgba(89, 62, 43, 10);
+	text-align: center;
+}
+
+.captionline
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.caption
+{
+	color: rgba(242, 233, 216, 1);
+	font-size: 100%;
+	font-weight: light;
+	text-align: center;
+	font-family: 'Source Sans 3', sans-serif;
+	line-height: 15px;
+	position: relative;
+	top: 2px;
+}
+	/*  ERFAHRUNGSWERTE ENDE */
+
+	/*  TEXTE/ INHALT ANFANG */
+#drei
+{
+	height: 650px;
+	_background: red;	
+}
+
+#cafetext
+{
+	width: 700px;
+	height: 650px;
+	_background: salmon;
+	float: left;
+}
+
+.aboutus
+{
+	width: auto;
+	height: auto;
+	margin-left: 70px;
+	_background: lightpink;
+	position: relative;
+	top:50px;
+}
+
+h2
+{
+	font-size: 130%;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+.intro
+{
+	width: auto;
+	height: auto;
+	margin-left: 70px;
+	position: relative;
+	top: 30px;
+}
+
+h3
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 250%;
+}
+
+.runningtext
+{
+	width: 50%;
+	height: auto;
+	margin-left: 70px;
+	position: relative;
+	_background: magenta;
+	top: 50px;
+}
+
+.runningtext p
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 110%;
+	font-weight:300;
+}
+
+.outro
+{
+	width: auto;
+	height: auto;
+	margin-left: 210px;
+	position: relative;
+	top: 50px;
+}
+
+h4
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 200%;
+}
+
+#sidepics
+{
+	width: 500px;
+	height: 650px;
+	_background: seagreen;
+	float: right;
+}
+
+#interior_desktop
+{
+	float: right;
+	width: auto;
+	_background: rosybrown;
+	position: relative;
+	top: -16px;
+	left: 40px
+}
+
+#interior_mobil
+{
+	display: none;
+}
+
+#team
+{
+	float: right;
+	position: relative;
+	right: 430px;
+	top: -450px;
+}
+
+#mood
+{
+	float: right;
+	position: relative;
+	right: 330px;
+	top: -450px;
+}
+	/*  TEXTE/ INHALT ENDE */
+
+	/*  RESERVIERUNG UND EVENTS IN BILDERN ANFANG */
+#vier
+{
+	height: 416px;
+	background: rgba(174, 137, 111, 12);
+}
+
+#frameline
+{
+	width: 1100px;
+	height: 300px;
+	_background: crimson;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.framepics img
+{
+	width: 202px;
+	height: 300px;
+	_background: chartreuse;
+	margin-top: 30px;
+	border-radius: 90px 90px 0px 0px;
+}
+
+.framepics img:hover
+{
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+#frametextline
+{
+	width: 1200px;
+	height: 116px;
+	_background: darkmagenta;
+	margin-left: 150px;
+	margin-right: 150px;
+	display: flex;
+	position: relative;
+	top: 10px;
+}
+
+.frametext1
+{
+	width: auto;
+	_background: darkorange;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.frametext2
+{
+	width: auto;
+	_background: darkorange;
+	margin-top: 40px;
+	margin-left: 180px;
+}
+
+.frametext3
+{
+	width: auto;
+	_background: darkorange;
+	margin-top: 40px;
+	margin-left: 155px;
+}
+
+.frametext1 a
+{
+	font-size: 200%;
+	color: rgba(242, 233, 216, 1);
+	font-family: 'Dancing Script', cursive;
+}
+
+.frametext2 a
+{
+	font-size: 200%;
+	color: rgba(242, 233, 216, 1);
+	font-family: 'Dancing Script', cursive;
+}
+
+.frametext3 a
+{
+	font-size: 200%;
+	color: rgba(242, 233, 216, 1);
+	font-family: 'Dancing Script', cursive;
+}
+
+	/*  RESERVIERUNG UND EVENTS IN BILDERN ENDE */	
+
+	/*  BESCHREIBUNG ANFANG */
+#fünf
+{
+	height: 200px;
+	background: white;
+}
+
+#descriptionline
+{
+	width: 1100px;
+	height: 200px;
+	margin: auto;
+	_background: chocolate;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 60px;
+	margin-right: 50px;
+}
+
+.descriptionbox
+{
+	_background:crimson;
+	width: 20%;
+	height: 200px;
+}
+
+.descriptionbox p
+{
+	font-family: 'Source Sans 3', sans-serif;
+}
+	/*  BESCHREIBUNG ENDE */
+
+	/* FOOTER  ANFANG */
+#footer
+{
+	height: 30px;
+	background: rgba(27, 22, 18, 2);
+	position: relative;
+	bottom: 0px;
+}
+
+#impressum
+{
+	float: left;
+	width: 1060px;
+	height: 30px;
+	_background: lightgreen;
+	margin-left: 20px;
+}
+
+#impressum a
+{
+	color: rgba(242, 233, 216, 1);
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 120%;
+}
+
+#design
+{
+	width: auto;
+	height: 30px;
+	_background: lime;
+	float: right;
+	color: rgba(242, 233, 216, 1);
+	
+	font-size: 80%;
+	position: relative;
+	top: 6px;
+	margin-right: 20px;
+}
+	/* FOOTER  ENDE */
+/*  INDEX.HTML ENDE */
+
+/*  UNSER_ANGEBOT/ RESTAURANT.HTML ANFANG */
+
+#cafe_wrapper
+{
+	width: 100%;
+	height: 2486px;
+	background: rgba(242, 233, 216, 1);
+	margin: auto;
+}
+
+#cafe_content
+{
+	width: 1200px;
+	height: 2486px;
+	margin: 120px auto;
+	background: white;
+	box-shadow: 0px 10px 15px black;
+}
+
+.headlinetitle_angebot
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.headlinetitle_angebot p
+{
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+.angebot_kaffee
+{
+	width: auto;
+	position: relative;
+}
+
+.angebot_bild
+{
+	position: absolute;
+	left: -40px;
+}
+
+.gericht_extra
+{
+	z-index: 200;
+	_background: crimson;
+	position: relative;
+	left: 600px;
+	top: 29px;
+	width: 600px;
+}
+
+#restaurant_wrapper
+{
+	width: 100%;
+	height: 2120px;
+	background: rgba(242, 233, 216, 1);
+	margin: auto;
+}
+
+#restaurant_content
+{
+	width: 1200px;
+	height: 2183px;
+	margin: 120px auto;
+	background: white;
+	box-shadow: 0px 10px 15px black;
+}
+
+.menue_box
+{
+	width: auto;
+	height: 409px;
+	margin-top: 3px;
+}
+
+#restaurant_brot
+{
+	width: auto;
+	position: relative;
+}
+
+.restaurant_bild
+{
+	position: absolute;
+	left:-40px;
+	top: -10px;
+}
+
+.gericht
+{
+	position: absolute;
+	_background: palevioletred;
+}
+
+.restaurant_text
+{
+	margin-left: 50px;
+	margin-top: 30px;
+	z-index: 200;
+	_background: cyan;
+}
+
+.menue_links_name
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.menue_links_beschreibung
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+#restaurant_suppe
+{
+	width: auto;
+	position: relative;
+}
+
+.menue_rechts_name
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+	font-size: 20px;
+	margin-left: 600px;
+}
+
+.menue_rechts_beschreibung
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-left: 600px;
+}
+
+.menue_links_name_white
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+	font-size: 20px;
+	color: white;
+}
+
+.menue_links_beschreibung_white
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	font-weight: lighter;
+	color: white;
+}
+
+.menue_bild
+{
+	display: none;
+}
+/*  UNSER_ANGEBOT/ RESTAURANT.HTML ENDE */
+
+/*  UNSER_TEAM.HTML ANFANG */
+.team_text
+{
+	width: auto;
+	_background: violet;
+}
+
+.team_text p
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 200%;
+	font-weight:300;
+	line-height: 20px;
+	_background: lightblue;
+	text-align: center;
+}
+
+.team_mitarbeiter
+{
+	height: 200px;
+	width: 1200px;
+	_background: chartreuse;
+
+}
+
+.team_bilder
+{
+	width: auto;
+	height: 250px;
+	background: rgba(242, 233, 216, 1);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.team_bilder img
+{
+	border-radius: 50%;
+}
+
+/*  UNSER_TEAM.HTML ENDE */
+
+/*  GALERIE.HTML ANFANG */
+#fadeshow
+{
+	margin: auto;
+	margin-top: 50px;
+}
+
+#bilder_statt_fadeshow
+{
+	display: none;
+}
+
+#video
+{
+	margin: auto;
+	_background: purple;
+	margin-top: 100px;
+	width: 560px;
+}
+/*  GALERIE.HTML ENDE */
+
+/*  EVENTS.HTML ANFANG */
+#events_drei
+{
+	height: auto;
+	_background: red;
+	width: 100%;
+}
+
+.headlinetitle h3
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+#vernissage
+{
+	width: 665px;
+	_background:chartreuse;
+	margin: auto;
+}
+
+#kalender
+{
+	width: 800px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.events_captionline
+{
+	_background: orange;
+	border: solid 1px black;
+	width: 800px;
+}
+
+.caption_datum
+{
+	_background: chartreuse;
+	border: solid 1px black;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 120%;
+	width: 300px;
+}
+
+.events_caption
+{
+	_background: darkmagenta;
+	border: solid 1px black;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 120%;
+	width: 500px;
+}
+
+#savethedate
+{
+	border: solid 1px black;
+	width: 150px;
+	height: 40px;
+	margin-top: 30px;
+	display: table;
+	border-radius: 5px 5px 5px 5px;
+	background: rgba(174, 137, 111, 12);
+}
+
+#savethedate p
+{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+/*  EVENTS.HTML ENDE */
+
+/*  KARRIERE.HTML ANFANG */
+.karriere_text
+{
+	margin-left: 30px;
+}
+
+.karriere_text p
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 110%;
+	font-weight:300;
+	line-height: 20px;
+}
+
+.karriere_ausschreibung
+{
+	border: solid 1px black;
+	width: 500px;
+	float: left;
+	margin-right: 20px;
+	background: rgba(242, 233, 216, 1);
+}
+
+.karriere_ausschreibung p
+{
+	margin-left: 20px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+.karriere_ausschreibung h2
+{
+	margin-left: 20px;
+}
+
+#karriere_formular
+{
+	margin-left: 30px;
+	_background: lightgreen;
+	position: relative;
+	top:30px
+}
+/*  KARRIERE.HTML ENDE */
+
+/*  KONTAKT.HTML ANFANG */
+.kontakt_zeile
+{
+	_background: lightcoral;
+	width: 1200px;
+}
+
+.reservierung
+{
+	background: rgba(242, 233, 216,1);
+	width: 500px;
+	float: left;
+	margin-left: 30px;
+	height: 690px;
+}
+
+#adresse
+{
+	width: 610px;
+	background: rgba(242, 233, 216,1);
+	float: left;
+	height: 690px;
+	margin-left: 30px;
+}
+
+#adresse p
+{
+	margin-left: 5px;
+}
+
+/*  KONTAKT.HTML ENDE */
+
+/* MEDIA QUERY */
+@media screen and (max-width:800px) {
+
+/*  INDEX.HTML ANFANG */
+
+img
+{
+	max-width:100%;
+	height:auto;
+}
+
+#wrapper
+{
+	width: 98%;
+	_background: red;
+	height: auto;
+	display: flow-root;
+}
+
+#header
+{
+	display: none;
+}
+
+	/*  SOCIAL MEDIA ICONS ANFANG */
+#social
+{
+	width: 100%;
+	height: 20px;
+	position: relative;
+	top: 0px;
+	_background: cornflowerblue;
+}
+
+
+.socialmedia
+{
+	font-size: 100%;
+	width: 20px;
+	height: 20px;
+	_background: chocolate;
+}
+	/*  SOCIAL MEDIA ICONS ENDE */
+
+#content
+{
+	width: auto;
+	height: auto;
+	margin: auto;
+	position: relative;
+	top: 0px;
+	_background: blue;
+	display: flow-root;
+}
+
+	/*  HEADER BILD ANFANG */
+#eins
+{
+	height: auto;
+}
+
+#headerpic
+{
+	width: 100%;
+	position: relative;
+	top: 0px;
+	float: left;
+	height: auto;
+}
+
+#headerpic_desktop
+{
+	display: none;
+}
+
+#headerpic_mobil
+{
+	display: block;
+	width: auto;
+	position: relative;
+	left: 40px;
+}
+
+		/*  NAVI ANFANG */
+#navi
+{
+	width: 100%;
+	display: block;
+	height: 120px;
+	position: relative;
+	top:0px;
+	display: none;
+}
+
+.navipunkt
+{
+	width: 100%;
+	background: rgba(174, 137, 111, 12);
+	border: solid 1px black;
+	margin: auto;
+	height: 20px;
+	display: none;
+}
+
+.navipunkt a
+{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 3vw;
+	_background: chartreuse;
+}
+
+#navi_mobile
+{
+	position: relative;
+	left: 40px;
+	display: block;
+	z-index: 300;
+}
+		/*  NAVI ENDE */
+		/*  HEADLINE GRÖßENWAHN ANFANG */
+
+#headline
+{
+	display: none;
+}
+
+#headline h1 a
+{
+	display: none;
+}
+		/*  HEADLINE GRÖßENWAHN ENDE*/
+
+	/*  HEADER BILD ENDE */
+
+	/*  ERFAHRUNGSWERTE ANFANG */
+#zwei
+{
+	display: none;
+}
+	/*  ERFAHRUNGSWERTE ENDE */
+
+	/*  TEXTE/ INHALT ANFANG */
+#drei
+{
+	width: 100%;
+	position: relative;
+	top: 0px;
+	_background: red;
+	height: auto;
+	display: flow-root;
+}
+
+#cafetext
+{
+	width: 100%;
+	_background: salmon;
+	height: auto;
+}
+
+.aboutus
+{
+	width: auto;
+	margin-left: 10px;
+	position: relative;
+	top:0px;
+}
+
+.intro
+{
+	width: auto;
+	height: auto;
+	margin-left: 10px;
+	position: relative;
+	top: 0px;
+}
+
+h3
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 250%;
+}
+
+.runningtext
+{
+	width: 100%;
+	height: auto;
+	margin-left: 10px;
+	position: relative;
+	_background: magenta;
+	top: 0px;
+}
+
+.outro
+{
+	width: 100%;
+	height: auto;
+	margin-left: 10px;
+	position: relative;
+	top: 0px;
+}
+
+#sidepics
+{
+	width: 100%;
+	height: auto;
+	_background: seagreen;
+	position: relative;
+	top: 0px;
+}
+
+#interior_desktop
+{
+	display: none;
+}
+	
+#interior_mobil
+{
+	display: block;
+	padding: 4px;
+}
+
+#team
+{
+	position: none;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: none;
+	float: none;
+	padding: 4px;
+}
+
+#mood
+{
+	_float: left;
+	position: none;
+	right: 0px;
+	top: 0px;
+	left: none;
+	display: block;
+	width: none;
+	padding: 4px;
+}
+	/*  TEXTE/ INHALT ENDE */
+
+#vier
+{
+	display: none;
+}
+	
+#fünf
+{
+	display: none;
+}
+
+/*  INDEX.HTML ENDE */
+
+/*  RESTAURANT.HTML ANFANG */
+
+#cafe_content
+{
+	width: auto;
+	height: auto;
+	margin: 0px auto;
+	background: white;
+	box-shadow: none;
+}
+
+#restaurant_content
+{
+	width: auto;
+	height: auto;
+	margin: 0px auto;
+	background: white;
+	box-shadow: none;
+}
+
+.menue_box
+{
+	display: none;
+}
+
+.menue_bild
+{
+	display: block;
+	width: 98%;
+	margin: auto;
+	_background: hotpink;
+}
+
+#restaurant_text_mobil_kaffee
+{
+	margin-left: 0px;
+	background: rgba(27, 22, 18, 2);
+	padding-top: 5px;
+}
+
+#restaurant_text_mobil_kaffee p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+	color: white;
+}
+
+#restaurant_text_mobil_kuchen
+{
+	margin-left: 0px;
+	background: rgba(242, 233, 216, 1);
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_kuchen p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+#restaurant_text_mobil_muffin
+{
+	margin-left: 0px;
+	background: rgba(237, 211, 176, 5);
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_muffin p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+#restaurant_text_mobil_cookie
+{
+	margin-left: 0px;
+	background: rgba(89, 62, 43, 10);
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_cookie p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+	color: white;
+}
+
+#restaurant_text_mobil_brot
+{
+	margin-left: 0px;
+	background: hotpink;
+	padding-top: 5px;
+}
+
+#restaurant_text_mobil_brot p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+#restaurant_text_mobil_suppe
+{
+	margin-left: 0px;
+	background: orange;
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_suppe p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+#restaurant_text_mobil_salat
+{
+	margin-left: 0px;
+	background: rgb(13, 185, 51);
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_salat p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+
+#restaurant_text_mobil_pizza
+{
+	margin-left: 0px;
+	background: rgb(219, 72, 72);
+	padding-top: 5px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+#restaurant_text_mobil_pizza p
+{
+	margin-left: 4px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: lighter;
+}
+/*  RESTAURANT.HTML ENDE */
+
+/*  UNSER-TEAM.HTML ANFANG */
+.team_bilder
+{
+	width: auto;
+	height: auto;
+	background: rgba(242, 233, 216, 1);
+	display: table;
+	justify-content: none;
+	margin: auto;
+}
+
+.team_mitarbeiter
+{
+	height: auto;
+	width: 100%;
+	_background: chartreuse;
+	margin: auto;
+}
+
+/*  UNSER-TEAM.HTML ENDE */
+
+/*  GALERIE.HTML ANFANG */
+#fadeshow
+{
+	display:none
+}
+
+#bilder_statt_fadeshow
+{
+	display: block;
+}
+
+#video
+{
+	margin-top: 100px;
+	width: auto;
+	margin: none;
+}
+/*  GALERIE.HTML ENDE */
+
+/*  EVENT.HTML ANFANG */
+#events_drei
+{
+	width: 100%;
+	position: relative;
+	top: 0px;
+	_background: red;
+	height: auto;
+	display: flow-root;
+}
+/*  EVENT.HTML ENDE */
+
+/*  KARRIERE.HTML ANFANG */
+.karriere_ausschreibung
+{
+	border: solid 1px black;
+	width: 100%;
+	float: none;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.karriere_text
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#karriere_formular
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*  KARRIERE.HTML ENDE */
+
+/*  EVENTS.HTML ANFANG */
+#vernissage
+{
+	width: 100%;
+}
+
+#kalender
+{
+	width: 100%;
+}
+
+#savethedate
+{
+	width: 130px;
+}
+/*  EVENTS.HTML ENDE*/
+
+/*  KONTAKT.HTML ANFANG */
+.kontakt_zeile
+{
+	_background: lightcoral;
+	width: 100%;
+	margin-left: 5px;
+}
+
+.reservierung
+{
+	_background: rgb(0, 3, 0);
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	height: auto;
+}
+
+#adresse
+{
+	width: auto;
+	_background: lightskyblue;
+	float: none;
+	margin-left: 0px;
+	height: auto;
+}
+
+/*  KONTAKT.HTML ENDE */
+
+/* FOOTER ANFANG */
+#footer
+{
+	width: 100%;
+	height: auto;
+	background: rgba(27, 22, 18, 2);
+	position: relative;
+	bottom: 0px;
+	display: flow-root;
+}
+
+#impressum
+{
+	float: left;
+	width: 40%;
+	margin-left: 10px;
+}
+
+#design
+{
+	width: auto;
+	height: auto;
+	_background: lime;
+	float: left;
+	color: rgba(242, 233, 216, 1);
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 80%;
+	position: relative;
+	top: 0px;
+	margin-left: 10px;
+}
+/* FOOTER  ENDE */	
+	
+}
